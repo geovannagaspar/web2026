@@ -1,0 +1,78 @@
+:root {
+    --bg: #1e1e2f;
+    --card: #2a2a40;
+    --accent: #5b7fff;
+    --accent-hover: #4a6ae0;
+    --text: #f0f0f5;
+    --input-bg: #33334d;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  
+  .calculadora {
+    background: var(--card);
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    width: 300px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: var(--text);
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--input-bg);
+    color: var(--text);
+    font-size: 16px;
+    outline: none;
+  }
+  
+  input:focus {
+    box-shadow: 0 0 0 2px var(--accent);
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: var(--accent);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    background: var(--accent-hover);
+  }
+  
+  .resultado {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text);
+    min-height: 30px;
+  }

@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Calculadora de Soma</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Aperte F12 para o DEV Tools e abra aba de console!</h2>
 
-    <script src="main.js"></script>
+  <div class="calculator-card">
+    <h1>Somador</h1>
+    <form id = "calcForm">
+    <div class="form-group">
+    <label for = "nun1">Primeiro Número:</label>
+    <input type = "number" id="num1" step="any" require placeholdor = "digite o valor 1° valor">
+    </div>
+
+<div class = "form-group">
+  <label for = "number">Segundo Número:</label>
+  <input type="number" id="num2" step="any" required placeholder="Digite o 2° valor">
+  </div>
+  
+  <button type="submit"></button>
+  </form>
+
+  <div class="result - container">
+    Resultados: <span id="resultado">0</span>
+   </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>

@@ -1,8 +1,5 @@
-var valorUm = 3
-var valorDois = 19
+const formulario = document.getElementById("calcForm")
 
-function somar(a,b){
-    let c = a+b
-    return (c)
+formulario.addEventListener("submit", function(e){
+    
 }
-console.log(somar(valorUm,valorDois))
